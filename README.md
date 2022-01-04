@@ -18,5 +18,5 @@ samples, guidance on mobile development, and a full API reference.
 
 UI Design
 
-[login page](https://raw.githubusercontent.com/mamunru/Flutter-Login-UI/master/assets/2022-01-04_203312.png)
-[home page](https://raw.githubusercontent.com/mamunru/Flutter-Login-UI/master/assets/2022-01-04_203332.png)
+[login page](https://raw.githubusercontent.com/mamunru/Flutter-Login-UI/master/assets/2022-01-04_203312.png?raw=true)
+[home page](https://raw.githubusercontent.com/mamunru/Flutter-Login-UI/master/assets/2022-01-04_203332.png?raw=true)
