@@ -6,6 +6,8 @@ import 'package:login/components/rounded_button.dart';
 import 'package:login/components/rounded_input_field.dart';
 import 'package:login/components/rounded_password_field.dart';
 
+import '../../extra.dart';
+
 class Body extends StatelessWidget {
   Body({
     Key? key,
@@ -38,15 +40,33 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "LOGIN",
-              press: () {},
+              press: () {
+                print('Log in');
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => mypage()),
+                );
+                // Navigator.of(context).push(_createRoute());
+              },
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
-              press: () {},
+              press: () {
+                print('Log out');
+              },
             ),
           ],
         ),
       ),
     );
   }
+}
+
+Route _createRoute() {
+  return PageRouteBuilder(
+    pageBuilder: (context, animation, secondaryAnimation) => const mypage(),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      return child;
+    },
+  );
 }
